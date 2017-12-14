@@ -1,0 +1,87 @@
+.hero {
+	background-image: url(../img/1.jpg);
+	background-size: cover;
+	background-position: center;
+	// height: 100vh;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.about-title {
+	background-image: url(../img/2.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 45vw;
+}
+
+.about-text {
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+}
+
+.my-project {
+	margin-bottom: 1.5em;
+}
+
+.my-project-name {
+	font: $sans-serif-2;
+	font-weight: $normal;
+	margin-bottom: 0.25em;
+}
+
+.my-project-info {
+	color: $gray-light;
+}
+
+.archive {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.archive-container {
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+	background-color: $gray-lightest;
+}
+
+.archive-title {
+	margin-bottom: 1em;
+}
+
+.archive-btn {
+	margin-top: 2em;
+}
+
+.news-items {
+	margin-top: 2em;
+	font-size: 0.9em;
+}
+
+.news-title {
+	font-family: $sans-serif;
+}
+
+.news-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.news-info > * {
+	margin-bottom: 0;
+}
+
+.date {
+	font-weight: $extra-bold;
+	margin-top: 1.25em;
+
+	&::before {
+		content: '\f133';	
+		display: inline-block;
+		font-family: FontAwesome;
+		margin-right: 0.5em; 
+	}
+}
+
+
+
+
