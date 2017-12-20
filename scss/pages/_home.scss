@@ -1,11 +1,20 @@
-.hero {
-	background-image: url(../img/1.jpg);
-	background-size: cover;
-	background-position: center;
-	// height: 100vh;
-	padding-top: 20vh;
-	padding-bottom: 20vh;
+// .hero {
+// 	background-image: url(../img/1.jpg);
+// 	background-size: cover;
+// 	background-position: center;
+// 	// height: 100vh;
+// 	padding-top: 20vh;
+// 	padding-bottom: 20vh;
+// }
+
+.intro {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 }
+
+// .about-me {
+// 	font-size: 1.2rem;
+// }
 
 .about-title {
 	background-image: url(../img/2.jpg);
@@ -19,19 +28,80 @@
 	padding-bottom: 6vh;
 }
 
-.my-project {
-	margin-bottom: 1.5em;
+///// TEXTS //////
+
+.my-texts {
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
 }
 
-.my-project-name {
-	font: $sans-serif-2;
+.texts-title {
+	margin-bottom: 1em;
+}
+
+
+.clickable-card-block {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+}
+
+.clickable-card-title h4{
+	color: $brand-primary;
 	font-weight: $normal;
-	margin-bottom: 0.25em;
 }
 
-.my-project-info {
-	color: $gray-light;
+.clickable-card {
+  min-height: 20em;
+  margin-bottom: 1em;
 }
+
+.clickable-card a {
+	text-decoration: none;
+	color: $white;
+}
+
+.clickable-card:hover {
+  cursor:pointer;
+}
+.overlay{
+  display:none;
+  text-align: center;
+}
+
+.clickable-card:hover .overlay {
+  position:absolute;
+  width:100%;
+  height:100%;
+	display: flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.overlay:hover {
+	background-color: $brand-primary;
+	-webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+  opacity:0.95;
+}
+
+.overlay-content {
+  font-size:3rem;
+
+    &::before {
+		content: '\f0f6';	
+		display: inline-block;
+		font-family: FontAwesome;
+	}
+}
+
+.texts-btn {
+	margin-top: 1.5em;
+}
+
+/////// ARCHIVE //////////
 
 .archive {
 	margin-top: 1em;

@@ -4,11 +4,13 @@
 // without modifying source files.
 
 $red:    #DD3333;
+$blue: 	 #00bfb3;
 $white:  #fff;
 $black:  #1f1f1f;
 $gray-lightest:   #f7f7f9;
 
 $brand-primary: $red;
+$brand-secondary: $blue;
 $brand-inverse: $gray-lightest;
 
 $body-bg:    $white;
@@ -16,7 +18,11 @@ $body-color: $black;
 
 $font-size-base: 1rem;
 $display2-size:	 4vw;
+
 $lead-font-size: 1.2rem;
+
+$card-cap-bg: $white;
+
 
 
 
