@@ -1,3 +1,7 @@
+.navbar {
+	background-color: $white;
+}
+
 .navbar .navbar-brand {
 	a {
 	text-decoration: none;
@@ -22,4 +26,9 @@
 .nav-item {
 	margin-left: 2em;
 	font-size: 1.1rem;
+}
+
+.nav-link {
+	font-weight: 600;
+	margin-top: 0px;
 }

@@ -33,6 +33,9 @@
 .my-texts {
 	padding-bottom: 1.5em;
 	padding-top: 1.5em;
+	background-color: $gray-lightest;
+	padding-right: 4em;
+	padding-left: 4em;
 }
 
 .texts-title {
@@ -53,7 +56,9 @@
 
 .clickable-card {
   min-height: 20em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 0px;
 }
 
 .clickable-card a {
@@ -98,7 +103,7 @@
 }
 
 .texts-btn {
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 }
 
 /////// ARCHIVE //////////
@@ -111,7 +116,7 @@
 .archive-container {
 	padding-top: 4vh;
 	padding-bottom: 4vh;
-	background-color: $gray-lightest;
+	// background-color: $gray-lightest;
 }
 
 .archive-title {
@@ -122,13 +127,37 @@
 	margin-top: 2em;
 }
 
+
+///////////// NEWS /////////////////
+
+.news {
+	background-color: transparentize($brand-primary, 0.5);
+	padding-top: 1em;
+	padding-bottom: 2em;
+	color: $white;
+	h2 {
+		color: $white;
+	}
+}
+
 .news-items {
 	margin-top: 2em;
 	font-size: 0.9em;
 }
 
+.news-item {
+	.card {
+		border: 0px;
+		border-radius: 0;
+		img {
+			border-radius: 0;
+		}
+	}
+}
+
 .news-title {
 	font-family: $sans-serif;
+	color: $white;
 }
 
 .news-info {
@@ -151,6 +180,131 @@
 		margin-right: 0.5em; 
 	}
 }
+
+//////// Actueel ////////////
+
+.actueel {
+	background: $gray-lighter;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	flex-wrap: wrap;
+	flex: 1 1 80%;
+
+	h2 {
+		margin-bottom: 1em;
+	}
+}
+
+.actueel-content {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+ 	grid-auto-rows: minmax(400px, auto);
+  grid-gap: 10px;
+}
+
+.actueel-item {
+  background: $white;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  
+  &.medium {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  
+  &.tall {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+}
+
+@media screen and (min-width: 736px) {
+
+	.actueel {
+	background: $gray-lighter;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 6em;
+	padding-right: 6em;
+	flex-wrap: wrap;
+	flex: 1 1 80%;
+
+	h2 {
+		margin-bottom: 1em;
+	}
+}
+
+	.actueel-content {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+	
+	.actueel-item {
+  
+  	&.one {
+    grid-row: 1/6;
+    grid-column: span 1;
+  }
+  
+ 		&.two {
+    grid-row: 1/5;
+    grid-column: span 1;
+  }
+
+   	&.three {
+    grid-row: 1/7;
+    grid-column: span 1;
+  }
+
+   	&.four {
+    grid-row: 6/12;
+    grid-column: span 1;
+  }
+
+   	&.five {
+    grid-row: 5/11;
+    grid-column: span 1;
+  }
+
+   	&.six {
+    grid-row: 7/12;
+    grid-column: span 1;
+  }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
