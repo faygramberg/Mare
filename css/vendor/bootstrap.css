@@ -332,7 +332,7 @@ a {
   text-decoration: none; }
   a:focus, a:hover {
     color: #00736b;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -2207,7 +2207,7 @@ fieldset[disabled] a.btn {
     border-color: transparent; }
   .btn-link:focus, .btn-link:hover {
     color: #00736b;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent; }
   .btn-link:disabled {
     color: #636c72; }

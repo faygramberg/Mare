@@ -106,6 +106,24 @@
 	margin-top: 0.5em;
 }
 
+.carousel-indicators {
+
+	li {
+		background-color: $gray-lighter;
+	}
+}
+
+.carousel-indicators .active {
+	background-color: $gray-light;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	color: $gray;
+	width: 0px;
+}
+
+.carousel-control-prev, .carousel-control-next
+
 /////// ARCHIVE //////////
 
 .archive {
@@ -130,54 +148,83 @@
 
 ///////////// NEWS /////////////////
 
+// .news {
+// 	background-color: transparentize($brand-primary, 0.5);
+// 	padding-top: 1em;
+// 	padding-bottom: 2em;
+// 	color: $white;
+// 	h2 {
+// 		color: $white;
+// 	}
+// }
+
+// .news-items {
+// 	margin-top: 2em;
+// 	font-size: 0.9em;
+// }
+
+// .news-item {
+// 	.card {
+// 		border: 0px;
+// 		border-radius: 0;
+// 		img {
+// 			border-radius: 0;
+// 		}
+// 	}
+// }
+
+// .news-title {
+// 	font-family: $sans-serif;
+// 	color: $white;
+// }
+
+// .news-info {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// .news-info > * {
+// 	margin-bottom: 0;
+// }
+
+// .date {
+// 	font-weight: $extra-bold;
+// 	margin-top: 1.25em;
+
+// 	&::before {
+// 		content: '\f133';	
+// 		display: inline-block;
+// 		font-family: FontAwesome;
+// 		margin-right: 0.5em; 
+// 	}
+// }
+
 .news {
-	background-color: transparentize($brand-primary, 0.5);
 	padding-top: 1em;
 	padding-bottom: 2em;
-	color: $white;
-	h2 {
-		color: $white;
-	}
-}
-
-.news-items {
-	margin-top: 2em;
-	font-size: 0.9em;
-}
-
-.news-item {
-	.card {
-		border: 0px;
-		border-radius: 0;
-		img {
-			border-radius: 0;
-		}
-	}
 }
 
 .news-title {
-	font-family: $sans-serif;
-	color: $white;
+	padding-bottom: 1em;
 }
 
-.news-info {
-	display: flex;
-	flex-direction: column;
-}
-
-.news-info > * {
-	margin-bottom: 0;
-}
-
-.date {
-	font-weight: $extra-bold;
-	margin-top: 1.25em;
+.news-link {
 
 	&::before {
-		content: '\f133';	
+		content: '\f054';	
 		display: inline-block;
 		font-family: FontAwesome;
-		margin-right: 0.5em; 
+		margin-left: 0.3em;
+	}
+
+}
+
+.news-item {
+	// border: 0px;
+	border-radius: 0px;
+
+	img {
+		border-radius: 0px;
 	}
 }
 
