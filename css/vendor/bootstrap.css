@@ -1987,23 +1987,23 @@ fieldset[disabled] a.btn {
     border-color: #00827a; }
 
 .btn-secondary {
-  color: #292b2c;
+  color: #00bfb3;
   background-color: #fff;
-  border-color: #ccc; }
+  border-color: #00bfb3; }
   .btn-secondary:hover {
-    color: #292b2c;
+    color: #00bfb3;
     background-color: #e6e6e6;
-    border-color: #adadad; }
+    border-color: #00827a; }
   .btn-secondary:focus, .btn-secondary.focus {
-    box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5); }
+    box-shadow: 0 0 0 2px rgba(0, 191, 179, 0.5); }
   .btn-secondary.disabled, .btn-secondary:disabled {
     background-color: #fff;
-    border-color: #ccc; }
+    border-color: #00bfb3; }
   .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
-    color: #292b2c;
+    color: #00bfb3;
     background-color: #e6e6e6;
     background-image: none;
-    border-color: #adadad; }
+    border-color: #00827a; }
 
 .btn-info {
   color: #fff;
@@ -2101,23 +2101,23 @@ fieldset[disabled] a.btn {
     border-color: #00bfb3; }
 
 .btn-outline-secondary {
-  color: #ccc;
+  color: #00bfb3;
   background-image: none;
   background-color: transparent;
-  border-color: #ccc; }
+  border-color: #00bfb3; }
   .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #ccc;
-    border-color: #ccc; }
+    background-color: #00bfb3;
+    border-color: #00bfb3; }
   .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-    box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5); }
+    box-shadow: 0 0 0 2px rgba(0, 191, 179, 0.5); }
   .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-    color: #ccc;
+    color: #00bfb3;
     background-color: transparent; }
   .btn-outline-secondary:active, .btn-outline-secondary.active, .show > .btn-outline-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #ccc;
-    border-color: #ccc; }
+    background-color: #00bfb3;
+    border-color: #00bfb3; }
 
 .btn-outline-info {
   color: #5bc0de;
@@ -3136,7 +3136,7 @@ tbody.collapse.show {
 
 .card-outline-secondary {
   background-color: transparent;
-  border-color: #ccc; }
+  border-color: #00bfb3; }
 
 .card-outline-info {
   background-color: transparent;

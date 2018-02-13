@@ -5,12 +5,14 @@
 
 $red:    #DD3333;
 $blue: 	 #00bfb3;
+$light-blue: #c7e8e5;
 $white:  #fff;
 $black:  #1f1f1f;
 $gray-lightest:   #f7f7f9;
 
 $brand-secondary: $red;
 $brand-primary: $blue;
+$brand-primary-light: $light-blue;
 $brand-inverse: $gray-lightest;
 
 $body-bg:    $white;
@@ -24,5 +26,9 @@ $lead-font-size: 1.2rem;
 $card-cap-bg: $white;
 
 $link-hover-decoration: none;
+
+$btn-secondary-color:            $brand-primary;
+$btn-secondary-bg:               $white;
+$btn-secondary-border:           $brand-primary;
 
 

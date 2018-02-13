@@ -7,9 +7,17 @@
 // 	padding-bottom: 20vh;
 // }
 
+.title {
+	margin-bottom: 1em;
+}
+
 .intro {
 	padding-top: 5vh;
 	padding-bottom: 5vh;
+}
+
+.projects {
+	margin-bottom: 1em;
 }
 
 // .about-me {
@@ -28,20 +36,89 @@
 	padding-bottom: 6vh;
 }
 
+.projects-btn {
+	margin-top: 1em;
+}
+
+///////////// NEWS /////////////////
+
+.news {
+	padding-top: 1em;
+	padding-bottom: 2em;
+	background-color: $gray-lightest;
+}
+
+.news-link { 
+
+	&::after {
+		content: '\f054';	
+		display: inline-block;
+		font-family: FontAwesome;
+		margin-left: 0.3em;
+	}
+
+}
+
+.news-item {
+	// border: 0px;
+	border-radius: 0px;
+
+	img {
+		border-radius: 0px;
+	}
+}
+
+.news-btn {
+	margin-top: 1em;
+}
+
+.news {
+	.carousel-indicators {
+
+	li {
+		background-color: $gray-lighter;
+	}
+}
+
+.carousel-indicators .active {
+	background-color: $gray-light;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	color: $gray;
+	width: 0px;
+}
+}
+
+.indicator-lines {
+	li {
+		top: 40px;
+
+	}
+}
+
+.news-footer-info { 
+	font-size: 12px;
+
+	&::before {
+		content: '\f133';	
+		display: inline-block;
+		font-family: FontAwesome;
+		margin-right: 0.3em;
+	}
+
+}
+
 ///// TEXTS //////
 
 .my-texts {
 	padding-bottom: 1.5em;
 	padding-top: 1.5em;
-	background-color: $gray-lightest;
-	padding-right: 4em;
-	padding-left: 4em;
-}
+	background-color: $brand-primary-light;
+	background-image: url("../img/texts.jpg");
+	background-size: cover;
 
-.texts-title {
-	margin-bottom: 1em;
 }
-
 
 .clickable-card-block {
 	display: flex;
@@ -55,9 +132,10 @@
 }
 
 .clickable-card {
-  min-height: 20em;
+  min-height: 400px;
+  max-height: 400px;
   margin-bottom: 2em;
-  border: none;
+  border: 0px;
   border-radius: 0px;
 }
 
@@ -84,7 +162,7 @@
 }
 
 .overlay:hover {
-	background-color: $brand-primary;
+	background-color: $white;
 	-webkit-transition: background-color 0.4s ease-out;
   -moz-transition: background-color 0.4s ease-out;
   -o-transition: background-color 0.4s ease-out;
@@ -99,46 +177,30 @@
 		content: '\f0f6';	
 		display: inline-block;
 		font-family: FontAwesome;
+		color: $brand-primary;
 	}
 }
+
 
 .texts-btn {
 	margin-top: 0.5em;
 }
 
-.carousel-indicators {
+///////// NEWSLETTER ///////////
 
-	li {
-		background-color: $gray-lighter;
+#newsletter-container {
+	h4 {
+		color: $gray;
 	}
 }
 
-.carousel-indicators .active {
-	background-color: $gray-light;
-}
-
-.carousel-control-prev, .carousel-control-next {
-	color: $gray;
-	width: 0px;
-}
-
-.carousel-control-prev, .carousel-control-next
-
 /////// ARCHIVE //////////
 
-.archive {
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
 
 .archive-container {
 	padding-top: 4vh;
 	padding-bottom: 4vh;
-	// background-color: $gray-lightest;
-}
-
-.archive-title {
-	margin-bottom: 1em;
+	background-color: $gray-lightest;
 }
 
 .archive-btn {
@@ -146,87 +208,7 @@
 }
 
 
-///////////// NEWS /////////////////
 
-// .news {
-// 	background-color: transparentize($brand-primary, 0.5);
-// 	padding-top: 1em;
-// 	padding-bottom: 2em;
-// 	color: $white;
-// 	h2 {
-// 		color: $white;
-// 	}
-// }
-
-// .news-items {
-// 	margin-top: 2em;
-// 	font-size: 0.9em;
-// }
-
-// .news-item {
-// 	.card {
-// 		border: 0px;
-// 		border-radius: 0;
-// 		img {
-// 			border-radius: 0;
-// 		}
-// 	}
-// }
-
-// .news-title {
-// 	font-family: $sans-serif;
-// 	color: $white;
-// }
-
-// .news-info {
-// 	display: flex;
-// 	flex-direction: column;
-// }
-
-// .news-info > * {
-// 	margin-bottom: 0;
-// }
-
-// .date {
-// 	font-weight: $extra-bold;
-// 	margin-top: 1.25em;
-
-// 	&::before {
-// 		content: '\f133';	
-// 		display: inline-block;
-// 		font-family: FontAwesome;
-// 		margin-right: 0.5em; 
-// 	}
-// }
-
-.news {
-	padding-top: 1em;
-	padding-bottom: 2em;
-}
-
-.news-title {
-	padding-bottom: 1em;
-}
-
-.news-link {
-
-	&::before {
-		content: '\f054';	
-		display: inline-block;
-		font-family: FontAwesome;
-		margin-left: 0.3em;
-	}
-
-}
-
-.news-item {
-	// border: 0px;
-	border-radius: 0px;
-
-	img {
-		border-radius: 0px;
-	}
-}
 
 //////// Actueel ////////////
 
