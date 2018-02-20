@@ -4,15 +4,19 @@
 // without modifying source files.
 
 $red:    #DD3333;
+$yellow: #eecf22;
 $blue: 	 #00bfb3;
-$light-blue: #c7e8e5;
+$orange: #ff4a20;
+$blue-dark: #152a41;
+$blue-light: #c7e8e5;
 $white:  #fff;
 $black:  #1f1f1f;
 $gray-lightest:   #f7f7f9;
+$gray-dark:		#26303a;
 
-$brand-secondary: $red;
+$brand-secondary: $blue-dark;
 $brand-primary: $blue;
-$brand-primary-light: $light-blue;
+$brand-primary-light: $blue-light;
 $brand-inverse: $gray-lightest;
 
 $body-bg:    $white;
@@ -27,8 +31,8 @@ $card-cap-bg: $white;
 
 $link-hover-decoration: none;
 
-$btn-secondary-color:            $brand-primary;
-$btn-secondary-bg:               $white;
-$btn-secondary-border:           $brand-primary;
+$btn-secondary-color:            $white;
+$btn-secondary-bg:               $brand-secondary;
+$btn-secondary-border:           $brand-secondary;
 
 

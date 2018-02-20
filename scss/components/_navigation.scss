@@ -1,15 +1,19 @@
 .navbar {
 	background-color: $white;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 4em;
+	padding-right: 4em;
+		@include media-breakpoint-down(md) {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
 }
 
-.navbar .navbar-brand {
+.navbar-brand {
 	a {
 	text-decoration: none;
-	font-family: $sans-serif;
-	color: $brand-primary;
-	font-weight: 300;
+	font-family: $regular-font;
+	color: $brand-secondary;
+	font-weight: 600;
 	font-size: 1.7rem;
 		@include media-breakpoint-down(sm) {
 		font-size: 1.5rem;
@@ -20,8 +24,8 @@
 		font-size: 1.2rem;
 		margin-bottom: 0;
 		@include media-breakpoint-down(sm) {
-		font-size: 1rem;
-	}
+		display: none;
+		}
 	}
 }
 
@@ -31,6 +35,8 @@
 }
 
 .nav-link {
+	font-family: $regular-font;
+	color: $black;
 	font-weight: 600;
 	margin-top: 0px;
 }
