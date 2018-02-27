@@ -5,6 +5,7 @@
 
 $red:    #DD3333;
 $yellow: #eecf22;
+$yellow-light: 	#f3f9d5;
 $blue: 	 #00bfb3;
 $orange: #ff4a20;
 $blue-dark: #152a41;
@@ -35,4 +36,6 @@ $btn-secondary-color:            $white;
 $btn-secondary-bg:               $brand-secondary;
 $btn-secondary-border:           $brand-secondary;
 
-
+.btn-secondary:hover {
+	cursor: pointer;
+}

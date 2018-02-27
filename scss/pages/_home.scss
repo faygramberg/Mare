@@ -1,18 +1,9 @@
 ///////////// GENERAL ////////////////
 
-.container {
-	padding-left: 6em;
-	padding-right: 6em;
-
-	@include media-breakpoint-down(md) {
-			padding-left: 1em;
-			padding-right: 1em;
-		}
-}
 
 section {
-	padding-top: 4em;
-	padding-bottom: 5em;
+	padding-top: 3em;
+	padding-bottom: 3em;
 		@include media-breakpoint-down(md) {
 			padding-top: 2em;
 			padding-bottom: 2em;
@@ -21,14 +12,17 @@ section {
 
 .title {
 	margin-bottom: 1em;
+	border-bottom: 0.5px dashed $gray;
+}
+
+.bg-color {
+		display: inline;
+		background-color: $brand-primary;
+		padding: 0.3em;
 }
 
 //////////// INTRO ////////////////
 
-// .intro {
-// 	padding-top: 5vh;
-// 	padding-bottom: 5vh;
-// }
 
 .about-title {
 	background-image: url(../img/2.jpg);
@@ -45,29 +39,14 @@ section {
 ///////////// PROJECTS /////////////////
 
 .projects {
-	// padding-top: 1em;
-	// padding-bottom: 2em;
-	background-color: $gray-lightest;
-}
-
-.project-link { 
-
-	&::after {
-		content: '\f054';	
-		display: inline-block;
-		font-family: FontAwesome;
-		margin-left: 0.3em;
-	}
-
-}
-
-.project-title {
-	font-weight: 400;
+	background-color: $white;
 }
 
 .project-item {
-	border: 0px;
+	// border: 2px solid $black;
 	border-radius: 0px;
+	border: 0px;
+	border-bottom: 1px solid $gray-lighter;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 	margin-bottom: 2.5em;
@@ -84,12 +63,43 @@ section {
 
 .project-footer-info { 
 	font-size: 12px;
+	padding-left: 0px;
+	padding-bottom: 0px;
 
 	&::before {
 		content: '\f133';	
 		display: inline-block;
 		font-family: FontAwesome;
 		margin-right: 0.3em;
+	}
+
+}
+
+.project-content {
+	padding: 0px;
+}
+
+.card-text {
+	margin-top: 1em;
+}
+
+.project-subtitle {
+	font-size: 14px;
+	max-width: 14em;
+	background-color: $black;
+	color: $white;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.project-link { 
+
+	&::after {
+		content: '\f054';	
+		display: inline-block;
+		font-family: FontAwesome;
+		margin-left: 0.3em;
+		margin-bottom: 0.5em;
 	}
 
 }
@@ -101,21 +111,39 @@ section {
 ///// TEXTS //////
 
 .my-texts {
-	// padding-bottom: 1.5em;
-	// padding-top: 1.5em;
-	background-color: $gray-lighter;
+	background-color: $gray-lightest;
 }
 
 .clickable-card-block {
 	display: flex;
 	flex-direction: column;
 	text-align: start;
+	padding: 0px;
+
+		h4 {
+		background-color: $brand-primary;
+		color: $white;
+		font-weight: 400;
+		padding: 0.5em;
+		margin: 0px;
+		}
+
+		.text-card-text {
+			padding: 0.8em;
+			margin: 0px;
+		}
+
+		.card-text {
+			margin: 0px;
+		}
+		
+		.text-footer {
+			padding-left: 0.8em;
+			margin: 0px;
+		}
+
 }
 
-.clickable-card-title h4{
-	color: $brand-primary;
-	font-weight: 400;
-}
 
 .clickable-card {
   min-height: 400px;
@@ -147,25 +175,34 @@ section {
   justify-content:center;
 }
 
+// .overlay:hover {
+// 	background-color: $brand-primary;
+// 	-webkit-transition: background-color 0.4s ease-out;
+//   -moz-transition: background-color 0.4s ease-out;
+//   -o-transition: background-color 0.4s ease-out;
+//   transition: background-color 0.4s ease-out;
+//   opacity:1;
+// }
+
 .overlay:hover {
-	background-color: $brand-secondary;
-	-webkit-transition: background-color 0.4s ease-out;
-  -moz-transition: background-color 0.4s ease-out;
-  -o-transition: background-color 0.4s ease-out;
-  transition: background-color 0.4s ease-out;
-  opacity:0.95;
+	border: 1px solid $brand-primary;
+	-webkit-transition: border 0.4s ease-out;
+  -moz-transition: border 0.4s ease-out;
+  -o-transition: border 0.4s ease-out;
+  transition: border 0.4s ease-out;
+  opacity:1;
 }
 
-.overlay-content {
-  font-size:3rem;
+// .overlay-content {
+//   font-size:3rem;
 
-    &::before {
-		content: '\f0f6';	
-		display: inline-block;
-		font-family: FontAwesome;
-		color: $white;
-	}
-}
+//     &::before {
+// 		content: '\f0f6';	
+// 		display: inline-block;
+// 		font-family: FontAwesome;
+// 		color: $brand-primary;
+// 	}
+// }
 
 
 .texts-btn {
@@ -180,7 +217,13 @@ section {
 		margin-bottom: 1em;
 	}
 
-	background-color: $gray-lightest;
+	background: repeating-linear-gradient(
+	45deg,
+  #e6f7f5,
+  #e6f7f5 10px,
+  #b8ede9 10px,
+  #b8ede9 20px
+);
 }
 
 .form-control {

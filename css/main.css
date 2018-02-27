@@ -5,6 +5,9 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.btn-secondary:hover {
+  cursor: pointer; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -6659,7 +6662,9 @@ h1 {
 .navbar {
   background-color: #fff;
   padding-left: 4em;
-  padding-right: 4em; }
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 2em; }
   @media (max-width: 991px) {
     .navbar {
       padding-left: 1em;
@@ -6737,24 +6742,22 @@ footer {
     color: #00bfb3;
     text-decoration: none; }
 
-.container {
-  padding-left: 6em;
-  padding-right: 6em; }
-  @media (max-width: 991px) {
-    .container {
-      padding-left: 1em;
-      padding-right: 1em; } }
-
 section {
-  padding-top: 4em;
-  padding-bottom: 5em; }
+  padding-top: 3em;
+  padding-bottom: 3em; }
   @media (max-width: 991px) {
     section {
       padding-top: 2em;
       padding-bottom: 2em; } }
 
 .title {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  border-bottom: 0.5px dashed #464a4c; }
+
+.bg-color {
+  display: inline;
+  background-color: #00bfb3;
+  padding: 0.3em; }
 
 .about-title {
   background-image: url(../img/2.jpg);
@@ -6767,20 +6770,12 @@ section {
   padding-bottom: 6vh; }
 
 .projects {
-  background-color: #f7f7f9; }
-
-.project-link::after {
-  content: '\f054';
-  display: inline-block;
-  font-family: FontAwesome;
-  margin-left: 0.3em; }
-
-.project-title {
-  font-weight: 400; }
+  background-color: #fff; }
 
 .project-item {
-  border: 0px;
   border-radius: 0px;
+  border: 0px;
+  border-bottom: 1px solid #eceeef;
   margin-left: 0.5em;
   margin-right: 0.5em;
   margin-bottom: 2.5em; }
@@ -6791,27 +6786,61 @@ section {
   margin-top: 1em; }
 
 .project-footer-info {
-  font-size: 12px; }
+  font-size: 12px;
+  padding-left: 0px;
+  padding-bottom: 0px; }
   .project-footer-info::before {
     content: '\f133';
     display: inline-block;
     font-family: FontAwesome;
     margin-right: 0.3em; }
 
+.project-content {
+  padding: 0px; }
+
+.card-text {
+  margin-top: 1em; }
+
+.project-subtitle {
+  font-size: 14px;
+  max-width: 14em;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 0.5em;
+  margin-bottom: 0.5em; }
+
+.project-link::after {
+  content: '\f054';
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-left: 0.3em;
+  margin-bottom: 0.5em; }
+
 .projects-btn {
   margin-top: 1em; }
 
 .my-texts {
-  background-color: #eceeef; }
+  background-color: #f7f7f9; }
 
 .clickable-card-block {
   display: flex;
   flex-direction: column;
-  text-align: start; }
-
-.clickable-card-title h4 {
-  color: #00bfb3;
-  font-weight: 400; }
+  text-align: start;
+  padding: 0px; }
+  .clickable-card-block h4 {
+    background-color: #00bfb3;
+    color: #fff;
+    font-weight: 400;
+    padding: 0.5em;
+    margin: 0px; }
+  .clickable-card-block .text-card-text {
+    padding: 0.8em;
+    margin: 0px; }
+  .clickable-card-block .card-text {
+    margin: 0px; }
+  .clickable-card-block .text-footer {
+    padding-left: 0.8em;
+    margin: 0px; }
 
 .clickable-card {
   min-height: 400px;
@@ -6840,26 +6869,18 @@ section {
   justify-content: center; }
 
 .overlay:hover {
-  background-color: #152a41;
-  -webkit-transition: background-color 0.4s ease-out;
-  -moz-transition: background-color 0.4s ease-out;
-  -o-transition: background-color 0.4s ease-out;
-  transition: background-color 0.4s ease-out;
-  opacity: 0.95; }
-
-.overlay-content {
-  font-size: 3rem; }
-  .overlay-content::before {
-    content: '\f0f6';
-    display: inline-block;
-    font-family: FontAwesome;
-    color: #fff; }
+  border: 1px solid #00bfb3;
+  -webkit-transition: border 0.4s ease-out;
+  -moz-transition: border 0.4s ease-out;
+  -o-transition: border 0.4s ease-out;
+  transition: border 0.4s ease-out;
+  opacity: 1; }
 
 .texts-btn {
   margin-top: 0.5em; }
 
 .newsletter-container {
-  background-color: #f7f7f9; }
+  background: repeating-linear-gradient(45deg, #e6f7f5, #e6f7f5 10px, #b8ede9 10px, #b8ede9 20px); }
   .newsletter-container h4 {
     color: #464a4c;
     margin-bottom: 1em; }
@@ -6872,16 +6893,12 @@ section {
   background-color: #f7f7f9;
   margin-top: 1em;
   padding-top: 4em; }
-  .projects-section .current-projects-title {
+  .projects-section .current-projects-title, .projects-section .past-projects-title {
     color: #464a4c;
-    border-bottom: 1px solid #464a4c;
+    border-bottom: 1px dashed #464a4c;
     margin-bottom: 1em; }
   .projects-section .past-projects {
     margin-top: 5em; }
-  .projects-section .past-projects-title {
-    color: #464a4c;
-    border-bottom: 1px solid #464a4c;
-    margin-bottom: 1em; }
   .projects-section .card-deck {
     margin-bottom: 2em; }
   .projects-section .card {
@@ -6890,7 +6907,7 @@ section {
     border-radius: 0px; }
     .projects-section .card img {
       border-radius: 0px; }
-  .projects-section .card-title {
+  .projects-section .project-page-subtitle {
     color: #00bfb3;
     font-size: 15px;
     font-weight: 400; }
@@ -6901,9 +6918,26 @@ section {
     border: 0px; }
 
 .texts-section {
-  background-color: #f7f7f9;
   margin-top: 1em;
-  padding-top: 4em; }
+  padding-top: 4em;
+  background: #f7f7f9; }
+  .texts-section .text-page-title {
+    color: #464a4c;
+    border-bottom: 1px dashed #464a4c;
+    margin-bottom: 1em; }
+  .texts-section .first-article {
+    margin-top: 4em; }
+  .texts-section .article {
+    margin-bottom: 3em;
+    background-color: #fff;
+    padding: 2em; }
+  .texts-section .read-more {
+    font-weight: 600; }
+    .texts-section .read-more::after {
+      content: '\f101';
+      display: inline-block;
+      font-family: FontAwesome;
+      margin-left: 0.3em; }
   .texts-section .card {
     min-height: 400px;
     max-height: 400px;
@@ -6912,7 +6946,8 @@ section {
   .texts-section h4 {
     color: #00bfb3; }
   .texts-section p {
-    color: #1f1f1f; }
+    color: #1f1f1f;
+    margin-top: 1em; }
   .texts-section .text-muted::before {
     content: '\f133';
     display: inline-block;
