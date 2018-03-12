@@ -6869,18 +6869,26 @@ section {
   justify-content: center; }
 
 .overlay:hover {
-  border: 1px solid #00bfb3;
-  -webkit-transition: border 0.4s ease-out;
-  -moz-transition: border 0.4s ease-out;
-  -o-transition: border 0.4s ease-out;
-  transition: border 0.4s ease-out;
+  background-color: #00bfb3;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
   opacity: 1; }
+
+.overlay-content {
+  font-size: 3rem; }
+  .overlay-content::before {
+    content: '\f0f6';
+    display: inline-block;
+    font-family: FontAwesome;
+    color: #fff; }
 
 .texts-btn {
   margin-top: 0.5em; }
 
 .newsletter-container {
-  background: repeating-linear-gradient(45deg, #e6f7f5, #e6f7f5 10px, #b8ede9 10px, #b8ede9 20px); }
+  background: #eceeef; }
   .newsletter-container h4 {
     color: #464a4c;
     margin-bottom: 1em; }
